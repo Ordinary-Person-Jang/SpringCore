@@ -14,6 +14,7 @@ public class MemoryMemberRepository implements MemberRepository {
   @Override
   public void save(Member member) {
     store.put(member.getId(), member);
+    System.out.println(member.getName());
   }
 
   @Override
